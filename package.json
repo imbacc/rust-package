@@ -1,0 +1,19 @@
+{
+  "name": "rust-package",
+  "version": "1.0.0",
+  "description": "rust 快捷命令执行",
+  "scripts": {
+    "build:web": "echo Rust快捷命令wasm-pack编译 👇 && wasm-pack build --target web --out-dir rust-package",
+    "build:node": "echo Rust快捷命令wasm-pack编译 👇 && wasm-pack build --target nodejs --out-dir rust-package",
+    "test": "ts-node ./rust-package/index.ts",
+    "czc": "git add . && cz"
+  },
+  "author": "imbacc",
+  "license": "ISC",
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "imba-config": "^2.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
